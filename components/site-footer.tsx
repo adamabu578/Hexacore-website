@@ -86,7 +86,7 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="container px-4 md:px-6 mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300">
-        <p>&copy; {new Date().getFullYear()} Temenos. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Heaxacore. All rights reserved.</p>
         <nav className="flex space-x-4 mt-4 md:mt-0">
           <Link href="/privacy-policy" className="hover:underline">
             Privacy Policy
