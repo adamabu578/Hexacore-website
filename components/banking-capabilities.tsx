@@ -7,31 +7,31 @@ export function BankingCapabilities() {
     {
       title: "Core Banking",
       description:
-        "Deliver innovative and comprehensive banking solutions that strengthen customer relationships, with speed and efficiency.",
+        "Provide cutting-edge, end-to-end banking solutions that enhance customer relationships through speed and efficiency.",
       link: "#",
     },
     {
       title: "Digital Banking",
       description:
-        "Create personalized experiences, powerful transactional capabilities and processes, to optimize performance and accelerate transformation.",
+        "Design personalized experiences and implement robust transactional processes to boost performance and drive transformation.",
       link: "#",
     },
     {
       title: "Payments",
       description:
-        "Power payments growth with secure, real-time processing, accelerated innovation, and elevated experiences.",
+        "Drive payment growth through secure real-time processing, rapid innovation, and exceptional user experiences.",
       link: "#",
     },
     {
       title: "Wealth Management",
       description:
-        "Drive efficiency and sustainable growth with our advanced solution to reduce costs and power end-to-end transformation.",
+        "Achieve efficiency and long-term growth with our advanced solution designed to lower costs and enable complete transformation.",
       link: "#",
     },
     {
       title: "Financial Crime Mitigation",
       description:
-        "Detect, remediate, and report financial crime risks across KYC, sanctions, watchlists, fraud, and AML activities.",
+        "Monitor, resolve, and report financial crime risks spanning KYC, sanctions, fraud, watchlists, and AML.",
       link: "#",
     },
   ]
@@ -40,7 +40,7 @@ export function BankingCapabilities() {
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue mb-12">
-          The richest set of end-to-end banking capabilities
+          A comprehensive suite of end-to-end banking capabilities
         </h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           {capabilities.map((capability, index) => (

@@ -7,7 +7,7 @@ export function SaasSection() {
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-8 items-center">
         <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full order-2 lg:order-1">
           <Image
-            src="/assets/saas.jpg"
+            src="/assets/saas.svg"
             alt="All Banking, one SaaS"
             layout="fill"
             objectFit="cover"
@@ -16,14 +16,13 @@ export function SaasSection() {
         </div>
         <div className="flex flex-col justify-center space-y-4 order-1 lg:order-2">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue">
-            All Banking, one SaaS
+           Every Banking Need. One Smart SaaS.
           </h2>
           <p className="max-w-[600px] text-temenos-gray md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Deliver ready-to-use solutions across all banking segments faster than ever before with the Enterprise
-            Service on Temenos SaaS.
+           Launch fully equipped solutions for every banking segment faster than ever using Hexacore SaaS Enterprise Service.
           </p>
           <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">
-            Discover Enterprise Service
+           Discover the Power of Enterprise Service
           </Button>
         </div>
       </div>

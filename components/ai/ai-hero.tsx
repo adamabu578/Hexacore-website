@@ -10,10 +10,10 @@ export function AiHero() {
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-temenos-blue">
-              Temenos AI
+              Hexacore AI
             </h1>
             <p className="max-w-[600px] text-temenos-gray md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Temenos leads responsible banking with AI-driven growth and efficiency.
+              Hexacore leads responsible banking with AI-driven growth and efficiency.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">

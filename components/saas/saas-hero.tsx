@@ -10,7 +10,7 @@ export function SaasHero() {
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-temenos-blue">
-              Temenos SaaS
+              Hexacore SaaS
             </h1>
             <p className="max-w-[600px] text-temenos-gray md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Access to leading banking solutions, proven and resilient as-a-service.

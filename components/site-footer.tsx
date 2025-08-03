@@ -10,8 +10,7 @@ export default function SiteFooter() {
             <Image src="/assets/hexacore.png" alt="Hexacore Logo" width={100} height={40}  className="rounded-md"/>
           </Link>
           <p className="text-sm">
-            Hexacore is the world’s leader in banking software, partnering with banks and fintechs to transform their
-            businesses.
+          Hexacore leads the world in banking software, helping banks and fintechs reshape their future through innovation.
           </p>
         </div>
         <div className="space-y-2">

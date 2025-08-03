@@ -18,7 +18,7 @@ export function Breadcrumbs({ items, className }: BreadcrumbsProps) {
       <ol className="inline-flex items-center space-x-1 md:space-x-2">
         <li className="inline-flex items-center">
           <Link href="/" className="text-sm font-medium text-current hover:opacity-80">
-            Temenos
+            Hexacore
           </Link>
         </li>
         {items.map((item, index) => (

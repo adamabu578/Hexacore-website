@@ -8,18 +8,17 @@ export function HeroSection() {
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-temenos-blue">
-              Modern Banking Simplified
+              Streamlined Solutions for Modern Banking
             </h1>
             <p className="max-w-[600px] text-temenos-gray md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Empower your staff with smart technology, streamline your operations, and deploy future-ready solutions to
-              modernize your bank today.
+              Leverage smart technology to empower your workforce, enhance efficiency, and future-proof your banking operations.
             </p>
           </div>
           <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">Start exploring</Button>
         </div>
         <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full">
           <Image
-            src="/assets/leadership.jpg"
+            src="/assets/leadership.svg"
             alt="Modern Banking"
             layout="fill"
             objectFit="cover"

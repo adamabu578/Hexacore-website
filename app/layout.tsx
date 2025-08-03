@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Hexcore | Banking Solutions",
+  title: "Hexacore | Digital, Core & AI banking platforms",
   description: " hexacore banking solutions.",
     generator: 'v0.dev'
 }

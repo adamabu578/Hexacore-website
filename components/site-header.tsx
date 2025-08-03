@@ -36,41 +36,41 @@ export default function SiteHeader() {
                       <div className="flex h-full w-full select-none flex-col justify-end rounded-md  from-muted/50 to-muted p-6 no-underline outline-none">
                         <div className="mb-2 mt-4 text-lg font-medium">Products</div>
                         <p className="text-sm leading-tight text-muted-foreground">
-                          Explore our comprehensive suite of banking products.
+                          Explore our full range of banking solutions.
                         </p>
                       </div>
                     </li>
                     <div className="grid grid-cols-2 gap-4 col-span-2">
                       <ListItem href="/core-banking" title="Core Banking">
-                        Deliver modern, comprehensive banking for all customer segments.
+                       Provide complete, modern banking solutions tailored to every customer segment.
                       </ListItem>
                       <ListItem href="/digital-banking" title="Digital Banking">
-                        Power personalized experiences, seamless transactions and accelerate transformation.
+                        Deliver tailored experiences, frictionless transactions, and fast-track your transformation journey.
                       </ListItem>
                       <ListItem href="/payments" title="Payments">
-                        Real-time, secure, and scalable payments processing.
+                        Secure, real-time, and scalable payment processing solutions.
                       </ListItem>
                       <ListItem href="/wealth-management" title="Wealth Management">
-                        A unified wealth management platform enabling digital and relationship manager experiences.
+                        An integrated wealth management platform that supports both digital and relationship manager experiences.
                       </ListItem>
                     </div>
                     <li className="row-span-full">
                       <div className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none">
                         <div className="mb-2 mt-4 text-lg font-medium">Innovation</div>
                         <p className="text-sm leading-tight text-muted-foreground">
-                          Discover how we are shaping the future of banking.
+                         Explore our vision for the future of banking.
                         </p>
                       </div>
                     </li>
                     <div className="grid grid-cols-2 gap-4 col-span-2">
                       <ListItem href="/innovation/platform" title="Platform">
-                        Our open platform for seamless integration and rapid development.
+                       Build faster with our open platform for smooth integration and agile development.
                       </ListItem>
                       <ListItem href="/innovation/ai" title="AI">
-                        Leverage artificial intelligence for smarter banking.
+                        Smarter banking, powered by AI.
                       </ListItem>
                       <ListItem href="/innovation/cloud" title="Cloud">
-                        Scalable and secure cloud-native banking solutions.
+                      Robust and secure cloud-native solutions designed for modern banking at scale.
                       </ListItem>
                     </div>
                     <li className="row-span-full">
@@ -81,8 +81,7 @@ export default function SiteHeader() {
                         >
                           <div className="mb-2 mt-4 text-lg font-medium">Hexacore SaaS</div>
                           <p className="text-sm leading-tight text-muted-foreground">
-                            Maximize customer focus and accelerate your growth with updated, resilient and secure
-                            banking services.
+                            Enhance customer engagement and drive growth with modern, resilient, and secure banking services.
                           </p>
                         </a>
                       </NavigationMenuLink>
@@ -106,13 +105,13 @@ export default function SiteHeader() {
                       <div className="text-lg font-medium mb-2">Segments</div>
                     </li>
                     <ListItem href="/retail-business-banking" title="Retail & Business">
-                      Build personalized, innovative services for individuals and businesses.
+                      Deliver innovative, personalized solutions for people and enterprises alike.
                     </ListItem>
                     <ListItem href="/corporate-commercial-banking" title="Corporate & Commercial">
-                      One platform for streamlined corporate and commercial banking.
+                     One solution for efficient corporate and commercial banking.
                     </ListItem>
                     <ListItem href="/wealth-management" title="Wealth Management">
-                      A unified wealth management platform enabling digital and relationship manager experiences.
+                    An integrated wealth management solution delivering unified experiences for clients and relationship managers.
                     </ListItem>
                     <li className="col-span-full flex justify-end">
                       <Link href="/solutions/segments" passHref>
@@ -133,22 +132,22 @@ export default function SiteHeader() {
                       <div className="text-lg font-medium mb-2">Partner Network</div>
                     </li>
                     <ListItem href="/partners/delivery" title="Delivery">
-                      Trusted partners delivering successful Temenos implementations.
+                     Reliable partners ensuring successful Hexacore implementations.
                     </ListItem>
                     <ListItem href="/partners/sales" title="Sales">
-                      Global partners extending Temenos sales reach.
+                      Worldwide partners expanding the reach of Hexacore sales.
                     </ListItem>
                     <ListItem href="/partners/technology" title="Technology">
-                      Powering banking with scalable technology, cloud and AI.
+                     Scalable technology, cloud, and AI driving the future of banking.
                     </ListItem>
                     <ListItem href="/partners/exchange-partners" title="Exchange Partners">
-                      Curated fintechs offering complementary solutions.
+                      Trusted fintechs delivering integrated, complementary services.
                     </ListItem>
                     <ListItem href="/partners/strategic-advisors" title="Strategic Advisors">
-                      Expert consultants driving strategic banking transformation.
+                      Banking transformation powered by experienced strategic consultants.
                     </ListItem>
                     <ListItem href="/partners/developer-community" title="Developer Community">
-                      Build, test, and extend on Temenos platforms.
+                     Develop, test, and enhance solutions on Hexacore platforms.
                     </ListItem>
                     <li className="col-span-full flex justify-end">
                       <Link href="/partners/overview" passHref>
@@ -169,19 +168,19 @@ export default function SiteHeader() {
                       <div className="text-lg font-medium mb-2">Read</div>
                     </li>
                     <ListItem href="/resources/blogs" title="Blogs">
-                      Insights on innovation, tech, and banking trends.
+                   Trends and insights on innovation, technology, and banking.
                     </ListItem>
                     <ListItem href="/resources/asset-library" title="Asset Library">
-                      Explore brochures, whitepapers, and more.
+                     Browse our brochures, whitepapers, and additional resources.
                     </ListItem>
                     <ListItem href="/resources/customer-success-stories" title="Customer Success Stories">
-                      Real stories of transformation with Temenos solutions.
+                    Authentic case studies showcasing transformation through Temenos.
                     </ListItem>
                     <ListItem href="/resources/press-releases" title="Press Releases">
-                      The latest announcements and company updates.
+                    Stay up to date with our latest news and announcements.
                     </ListItem>
                     <ListItem href="/resources/newsletter-signup" title="Newsletter Sign-up">
-                      Subscribe for hexacore news and insights.
+                     Join our mailing list for exclusive Hexacore news and thought leadership.
                     </ListItem>
                   </ul>
                 </NavigationMenuContent>
@@ -194,19 +193,19 @@ export default function SiteHeader() {
                       <div className="text-lg font-medium mb-2">About Us</div>
                     </li>
                     <ListItem href="/company/vision-strategy" title="Vision & Strategy">
-                      Our mission to redefine the future of banking.
+                     Our mission is to lead the next evolution in banking.
                     </ListItem>
                     <ListItem href="/company/approach-to-esg" title="Our Approach to ESG">
-                      Sustainability and ethics in every decision made.
+                     Integrating sustainability and ethics into all aspects of our decision-making.
                     </ListItem>
                     <ListItem href="/company/leadership" title="Leadership">
-                      Meet the people guiding our global vision.
+                     The team behind our global success.
                     </ListItem>
                     <ListItem href="/company/investor-relations" title="Investor Relations">
-                      Financials, reports, and investor-related news.
+                      FFinancial statements, reports, and investor updates.
                     </ListItem>
                     <ListItem href="/company/our-culture" title="Our Culture">
-                      We challenge, commit, collaborate, and care.
+                   e embrace challenges, honor commitments, foster collaboration, and prioritize compassion.
                     </ListItem>
                     {/* <ListItem href="/company/temenos-offices" title="Temenos Offices">
                       We have    offices in 37 countries.

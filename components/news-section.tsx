@@ -7,14 +7,14 @@ import { Card, CardContent } from "@/components/ui/card"
 export function NewsSection() {
   const newsItems = [
     {
-      image: "/assets/journalist.jpg",
-      title: "Hexacore Recognized by  Top Fintech Companies",
-      description: "Hexacore joins elite list of enterprise fintech companies for the second year in a row.",
+      image: "/assets/journalist.svg",
+      title: "Hexacore Earns Recognition from Leading Fintech Companies",
+      description: "Hexacore secures its spot once again on the elite list of enterprise fintech leaders.",
       link: "#",
     },
     {
-      image: "/assets/medium-shot.jpg",
-      title: "Ad hoc - Hexacore Announces Strong Q2-25 Results; FY-25 Guidance Raised on Back of Strong H1-25",
+      image: "/assets/medium-shot.svg",
+      title: "Hexacore Earns Recognition from Leading Fintech Companies",
       description:
          "Hexacore recognized for its customer focus, global scale and continuous innovation, helping banks succeed in the digital era.",
       link: "#",

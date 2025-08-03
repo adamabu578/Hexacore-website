@@ -72,7 +72,7 @@ export default function DeliveryPartnersPage() {
           <div className="flex flex-col space-y-4 z-10">
             <div className="text-sm text-muted-foreground">
               <Link href="#" prefetch={false}>
-                Temenos
+              Hexacore
               </Link>{" "}
               {">"}{" "}
               <Link href="#" prefetch={false}>
