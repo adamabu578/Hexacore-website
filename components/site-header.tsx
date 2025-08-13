@@ -76,7 +76,7 @@ export default function SiteHeader() {
                     <li className="row-span-full">
                       <NavigationMenuLink asChild>
                         <a
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[#153365] p-6 no-underline outline-none focus:shadow-md"
                           href="/hexacore-saas"
                         >
                           <div className="mb-2 mt-4 text-lg font-medium">Hexacore SaaS</div>
@@ -221,7 +221,7 @@ export default function SiteHeader() {
             <SearchIcon className="h-5 w-5" />
             <span className="sr-only">Search</span>
           </Button>
-          <Button className="hidden md:flex bg-temenos-blue hover:bg-temenos-blue-hover text-white">
+          <Button className="hidden md:flex bg-[#153365] hover:bg-[#28B1D3] text-white">
             Contact Sales
           </Button>
           <Sheet>
@@ -279,7 +279,7 @@ export default function SiteHeader() {
                         </Link>
                       </div>
                     </details>
-                    <Link href="/temenos-saas" className="block py-2">
+                    <Link href="/hexacore-saas" className="block py-2">
                       Hexacore SaaS
                     </Link>
                   </div>
@@ -382,11 +382,11 @@ export default function SiteHeader() {
                       Our Culture
                     </Link>
                     <Link href="/company/temenos-offices" className="block py-1">
-                      Temenos Offices
+                      Hexacore Offices
                     </Link>
                   </div>
                 </details>
-                <Button className="w-full bg-temenos-blue hover:bg-temenos-blue-hover text-white mt-4">
+                <Button className="w-full bg-[#153365] hover:bg-[#28B1D3] text-white mt-4">
                   Contact Sales
                 </Button>
               </nav>
@@ -406,13 +406,13 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
           <a
             ref={ref}
             className={cn(
-              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-[#28B1D3]",
               className,
             )}
             {...props}
           >
             <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p>
+            <p className="line-clamp-2 text-sm leading-snug text-[#28B1D3]">{children}</p>
           </a>
         </NavigationMenuLink>
       </li>

@@ -54,10 +54,10 @@ export function TrustedInstitutions() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue mb-8">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#153365] mb-8">
           Why the world&apos;s top financial institutions trust hexacore
         </h2>
-        <Button className="mb-12 bg-temenos-blue hover:bg-temenos-blue-hover text-white">
+        <Button className="mb-12 bg-[#153365] hover:bg-[#28B1D3] text-white">
           Explore our success stories
         </Button>
 
