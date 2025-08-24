@@ -6,57 +6,57 @@ export function SegmentExplorer() {
     {
       title: "Core for Retail Banking",
       description:
-        "Retail banking is changing fast, but with Temenos Core for Retail we provide access to rich and modular core capabilities so you can offer the latest personalized and relevant products.",
-      image: "/placeholder.svg?height=200&width=300",
+        "As retail banking transforms, Hexacore Core for Retail equips you with rich, modular core capabilities to offer customers the latest tailored and relevant products.",
+      image: "/assets/retail-core.jpg",
       link: "#",
     },
     {
       title: "Core for Business Banking",
       description:
-        "Modern businesses need modern financial services. With Temenos Core for Business, you can provide mass-market financial products while also addressing the diverse needs of individual businesses.",
-      image: "/placeholder.svg?height=200&width=300",
+        "mpower modern businesses with modern financial services—Hexacore for Business combines mass-market offerings with tailored solutions for individual needs.",
+      image: "/assets/core-business.jpg",
       link: "#",
     },
     {
       title: "Core for Corporate and Commercial Banking",
       description:
-        "Corporate and commercial banks need modern, flexible financial software. Temenos Core delivers unique modular capabilities tailored to these specific and often complex needs.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Hexacore empowers corporate and commercial banks with flexible, modular solutions designed for their specific and often complex requirements.",
+      image: "/assets/corporate.jpg",
       link: "#",
     },
     {
       title: "Treasury",
       description:
-        "Real-time treasury to strengthen risk control, increase efficiency, ensure compliance, and drive profitability. Accelerate growth through smarter capital and liquidity management.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Real-time treasury that strengthens risk control, boosts efficiency, ensures compliance, and drives profitability—empowering smarter capital and liquidity management for accelerated growth.",
+      image: "/assets/treasury.jpg",
       link: "#",
     },
     {
       title: "Regulatory Compliance",
       description:
-        "Leverage our global experience across all banking segments to manage risk, remain compliant, and deliver trusted banking services.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Leverage worldwide banking experience to control risk, stay compliant, and provide reliable financial services.",
+      image: "/assets/regulatory.jpg",
       link: "#",
     },
     {
       title: "Financial Risk Management",
       description:
-        "A pre-configured risk analytics solution to industrialize your risk and regulatory function, improve business decisions and optimize performance.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Optimize performance and decision-making with a risk analytics solution that industrializes your risk and regulatory function.",
+      image: "/assets/risk-manage.jpg",
       link: "#",
     },
     {
       title: "Analytics",
       description:
-        "Analytics delivers clear insights into financial and product performance, profitability, and customer behavior, empowering smarter, data-driven decisions and growth.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Analytics unlocks visibility into financial and product performance, enabling smarter decisions, improved profitability, and sustainable growth.",
+      image: "/assets/analytics.jpg",
       link: "#",
     },
     {
       title: "Data Hub",
       description:
-        "Transform banking with real-time data, AI acceleration, and seamless integration with a fully integrated and embedded data platform.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Transform banking with real-time data, AI acceleration, and seamless integration through a fully embedded data platform.",
+      image: "/assets/data-hub.jpg",
       link: "#",
     },
   ]
@@ -64,8 +64,8 @@ export function SegmentExplorer() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue mb-12">
-          Explore core banking in your segment
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#153365] mb-12">
+        Experience core banking built for your industry
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           {segments.map((segment, index) => (
@@ -77,9 +77,9 @@ export function SegmentExplorer() {
                 height={200}
                 className="rounded-lg mb-4 object-cover h-[200px] w-full"
               />
-              <h3 className="text-xl font-semibold text-temenos-blue mb-2">{segment.title}</h3>
+              <h3 className="text-xl font-semibold text-[#153365] mb-2">{segment.title}</h3>
               <p className="text-temenos-gray mb-4">{segment.description}</p>
-              <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">
+              <Button className="w-fit bg-[#28B1D3] hover:bg-[#153365] text-white">
                 Explore {segment.title.split(" ")[2] || segment.title}
               </Button>
             </div>

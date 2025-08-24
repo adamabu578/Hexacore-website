@@ -3,47 +3,47 @@ import { Settings, LayoutGrid, Globe, Lightbulb, Wrench, Box, MapPin, GitFork } 
 export function BeatingHeartSection() {
   const features = [
     {
-      icon: <Settings className="h-8 w-8 text-temenos-blue" />,
-      title: "Leading functionality",
-      description: "Access a market-leading set of proven banking capabilities with Temenos Core.",
+      icon: <Settings className="h-8 w-8 text-[#153365]" />,
+      title: "Advanced Functionality",
+      description: "Access industry-leading, trusted banking capabilities powered by Hexacore.",
     },
     {
-      icon: <LayoutGrid className="h-8 w-8 text-temenos-blue" />,
-      title: "Modular core banking",
-      description: "Our modular core banking helps you to adopt single capabilities and accelerate modernization.",
+      icon: <LayoutGrid className="h-8 w-8 text-[#153365]" />,
+      title: "Banking with Modular Architecture",
+      description: "Accelerate modernization with modular core banking that enables you to deploy single capabilities as needed.",
     },
     {
-      icon: <Globe className="h-8 w-8 text-temenos-blue" />,
-      title: "Go anywhere",
+      icon: <Globe className="h-8 w-8 text-[#153365]" />,
+      title: "Limitless Banking",
       description:
-        "We support banks in 150+ countries, and our Regionalized Solutions help to navigate local requirements.",
+        "Trusted by banks in 100+ countries, our regionalized solutions ensure smooth navigation of local regulations",
     },
     {
-      icon: <Lightbulb className="h-8 w-8 text-temenos-blue" />,
-      title: "Ongoing innovation",
-      description: "Reap the latest innovations and technology as we continually invest in our single code base.",
+      icon: <Lightbulb className="h-8 w-8 text-[#153365]" />,
+      title: "Continuous Innovation",
+      description: "Access the newest technologies and innovations with our commitment to investing in a single code base.",
     },
     {
-      icon: <Wrench className="h-8 w-8 text-temenos-blue" />,
-      title: "Leading tooling",
+      icon: <Wrench className="h-8 w-8 text-[#153365]" />,
+      title: "Cutting-Edge Tooling",
       description:
-        "Boost operational efficiency and rapidly configure banking products with our developer and product builder tooling.",
+        "Enhance efficiency and quickly configure banking products with our developer and product builder tools.",
     },
     {
-      icon: <Box className="h-8 w-8 text-temenos-blue" />,
-      title: "Scalable and sustainable",
+      icon: <Box className="h-8 w-8 text-[#153365]" />,
+      title: "Scalable. Sustainable. Future-Ready.",
       description:
-        "Our benchmarks prove you can deliver record-high transaction performance while also delivering on your sustainability goals.",
+        "With our benchmarks, you can achieve unmatched transaction performance while advancing your sustainability objectives.",
     },
     {
-      icon: <MapPin className="h-8 w-8 text-temenos-blue" />,
-      title: "End-to-end",
-      description: "Use Temenos Core with Digital, Financial Crime Mitigation, infused AI, and 150+ partner solutions.",
+      icon: <MapPin className="h-8 w-8 text-[#153365]" />,
+      title: "All-in-One",
+      description: "Leverage Hexacore together with Digital, infused AI, Financial Crime Mitigation, and a broad ecosystem of 120+ partner solutions.",
     },
     {
-      icon: <GitFork className="h-8 w-8 text-temenos-blue" />,
-      title: "Agnostic deployment",
-      description: "Deploy Temenos Core on premise, in the cloud, or as SaaS.",
+      icon: <GitFork className="h-8 w-8 text-[#153365]" />,
+      title: "Flexible Deployment",
+      description: "Hexacore: flexible deployment on-premises, in the cloud, or as SaaS.",
     },
   ]
 
@@ -51,15 +51,13 @@ export function BeatingHeartSection() {
     <section className="w-full py-12 md:py-24 lg:py-32 bg-temenos-light-bg">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-8">
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue">
-            The beating heart of banking
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#153365]">
+           Powering the Heart of Banking
           </h2>
         </div>
         <div className="space-y-4">
           <p className="text-temenos-gray md:text-lg">
-            Cover all your banking needs with a single platform and proven functionality designed to save time and costs
-            as well as foster deeper customer relationships. Over 950 banks around the world rely on Temenos Core as the
-            beating heart of their business, leveraging a broad range of capabilities across segments.
+         Hexacore is the trusted choice of more than 250 banks worldwide covering all banking needs with a unified platform that saves time, reduces costs, and fosters deeper customer relationships across all segments.
           </p>
         </div>
       </div>
@@ -68,7 +66,7 @@ export function BeatingHeartSection() {
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center p-4">
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-semibold text-temenos-blue mb-2">{feature.title}</h3>
+              <h3 className="text-lg font-semibold text-[#153365] mb-2">{feature.title}</h3>
               <p className="text-sm text-temenos-gray">{feature.description}</p>
             </div>
           ))}
