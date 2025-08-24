@@ -19,14 +19,14 @@ export function RealResultsSection() {
           <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="flex flex-col items-center justify-center">
               <LineChart className="h-12 w-12 text-[#28B1D3] mb-4" />
-              <h3 className="text-4xl font-bold text-white mb-2 text-gray-700">25%</h3>
+              <h3 className="text-4xl font-bold  mb-2 text-gray-700">25%</h3>
               <p className="text-gray-700 text-lg">Improved Customer Acquisition</p>
             </CardContent>
           </Card>
           <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="flex flex-col items-center justify-center">
               <TrendingUp className="h-12 w-12 text-[#28B1D3] mb-4" />
-              <h3 className="text-4xl font-bold text-white mb-2 text-gray-700">40%</h3>
+              <h3 className="text-4xl font-bold  mb-2 text-gray-700">40%</h3>
               <p className="text-gray-700 text-lg">Faster Innovation to Market</p>
             </CardContent>
           </Card>
