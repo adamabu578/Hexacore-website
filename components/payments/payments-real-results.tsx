@@ -6,20 +6,19 @@ export function PaymentsRealResults() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-temenos-light-bg">
       <div className="container px-4 md:px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue mb-8">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#28B1D3] mb-8">
           Real results
         </h2>
-        <Button className="mb-12 bg-temenos-blue hover:bg-temenos-blue-hover text-white">
+        <Button className="mb-12 bg-[#28B1D3] hover:bg-[#153365] text-white">
           Explore all success stories
         </Button>
         <div className="relative max-w-3xl mx-auto">
           <p className="text-lg md:text-xl italic text-temenos-gray mb-6">
-            &ldquo;Technology allows ABN AMRO to innovate quickly by bringing new features to clients and simultaneously
-            strengthen regulatory compliance, which is also at the heart of what Temenos is striving for.&rdquo;
+            &ldquo;TTechnology enables ABN AMRO to innovate rapidly by delivering new features to clients while reinforcing regulatory compliance a goal that aligns closely with Hexacore’ core mission.&rdquo;
           </p>
-          <p className="font-semibold text-temenos-blue">Marnix Theunissen</p>
+          <p className="font-semibold text-[#28B1D3]">Marnix Theunissen</p>
           <p className="text-sm text-temenos-gray mb-6">IT Director of Wealth Management, ABN AMRO</p>
-          <Link href="#" className="inline-flex items-center text-temenos-blue hover:underline font-medium">
+          <Link href="#" className="inline-flex items-center text-[#28B1D3] hover:underline font-medium">
             Explore ABN AMRO&apos;s story <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
           <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block">

@@ -3,50 +3,50 @@ import { TrendingUp, Clock, CheckCircle, DollarSign, AlertTriangle, ShieldCheck 
 export function PaymentsGrowthFeatures() {
   const features = [
     {
-      icon: <TrendingUp className="h-10 w-10 text-temenos-blue" />,
-      title: "Accelerate revenue growth",
+      icon: <TrendingUp className="h-10 w-10 text-[#28B1D3]" />,
+      title: "Accelerate Your Path to Growth",
       description:
-        "Drive revenue growth with rapid fintech integration, easy territorial expansion, and agile transaction routing.",
+        "Grow revenue faster with fintech integration, borderless expansion, and agile payments.",
     },
     {
-      icon: <Clock className="h-10 w-10 text-temenos-blue" />,
-      title: "Faster time-to-market",
-      description: "Lower time-to-market with pre-built specialized payments services, including regulations.",
+      icon: <Clock className="h-10 w-10 text-[#28B1D3]" />,
+      title: "Launch Faster",
+      description: "Go live faster with pre-built payments and built-in compliance.",
     },
     {
-      icon: <CheckCircle className="h-10 w-10 text-temenos-blue" />,
-      title: "Reduced cost of processing",
+      icon: <CheckCircle className="h-10 w-10 text-[#28B1D3]" />,
+      title: "Optimized Processing Expenses",
       description:
-        "Optimized STP through smart services, with automated exception handling for improved risk management.",
+        "Smarter STP, Safer Operations: Automated exception handling for stronger risk management.",
     },
     {
-      icon: <DollarSign className="h-10 w-10 text-temenos-blue" />,
-      title: "Reduce cost of ownership",
-      description: "Single, pre-integrated platform for all payment types, and flexible deployment.",
+      icon: <DollarSign className="h-10 w-10 text-[#28B1D3]" />,
+      title: "Minimize Ownership Costs",
+      description: "All Payments. One Platform. Endless Flexibility.",
     },
     {
-      icon: <AlertTriangle className="h-10 w-10 text-temenos-blue" />,
-      title: "Reduce risks",
-      description: "Minimize operational disruptions and protect your business and clients from bad actors.",
+      icon: <AlertTriangle className="h-10 w-10 text-[#28B1D3]" />,
+      title: "Smarter Choices, Fewer Risks",
+      description: "Keep Operations Smooth. Keep Threats Out.",
     },
     {
-      icon: <ShieldCheck className="h-10 w-10 text-temenos-blue" />,
-      title: "Regulatory compliance",
-      description: "Automatically updated with support for the latest payment market standards.",
+      icon: <ShieldCheck className="h-10 w-10 text-[#28B1D3]" />,
+      title: "Ensure Regulatory Compliance",
+      description: "Continuously updated to support the latest payment market standards.",
     },
   ]
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-temenos-light-bg">
       <div className="container px-4 md:px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue mb-12">
-          Rapidly grow your payments business with Temenos
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#153365] mb-12">
+         Accelerate your payments business growth with Hexacore.
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center p-4">
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-semibold text-temenos-blue mb-2">{feature.title}</h3>
+              <h3 className="text-lg font-semibold text-[#153365] mb-2">{feature.title}</h3>
               <p className="text-sm text-temenos-gray">{feature.description}</p>
             </div>
           ))}

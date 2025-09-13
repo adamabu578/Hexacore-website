@@ -7,7 +7,7 @@ export function PaymentsSeamlessSection() {
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-8 items-center">
         <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full order-2 lg:order-1">
           <Image
-            src="/placeholder.svg?height=400&width=600"
+            src="/assets/pay-card.jpg"
             alt="Payments made seamless"
             layout="fill"
             objectFit="cover"
@@ -15,16 +15,14 @@ export function PaymentsSeamlessSection() {
           />
         </div>
         <div className="flex flex-col justify-center space-y-4 order-1 lg:order-2">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue">
-            Payments made seamless
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#28B1D3]">
+            Seamless Payments
           </h2>
           <p className="max-w-[600px] text-temenos-gray md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Providers require faster, smarter and better customer engagement services to win new business and grow
-            revenues. Temenos leverages advanced, scalable technologies to provide lower cost routings, quicker times to
-            market, faster payment deliveries, and frictionless customer experiences.
+          Stay ahead with faster, smarter, and more engaging customer services. Hexacore empowers providers with scalable technologies that cut costs, speed up delivery, and create effortless payment experiences.
           </p>
-          <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">
-            Explore Enterprise Payments Processing
+          <Button className="w-fit bg-[#28B1D3] hover:bg-[#153365] text-white">
+           Experience Next-Level Enterprise Payments
           </Button>
         </div>
       </div>
