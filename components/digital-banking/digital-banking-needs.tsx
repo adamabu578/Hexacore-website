@@ -4,31 +4,31 @@ import { Button } from "@/components/ui/button"
 export function DigitalBankingNeeds() {
   const needs = [
     {
-      title: "Digital for Retail Banking",
+      title: "Digital Solutions for Retail Banking",
       description:
-        "Simplify your day-to-day banking, empowering customers with seamless experiences, personalized insights, and real-time control of their financial lives. Temenos Digital drives engagement, loyalty, and banking efficiency.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Hexacore Digital makes banking simple—seamless, personalized, and real-time—driving customer loyalty and efficiency.",
+      image: "/assets/digital-retail.jpg",
       link: "#",
     },
     {
-      title: "Digital for Business Banking",
+      title: "Digital at the Core of Business Banking",
       description:
-        "Remove the complexity from business banking, providing SMEs with tools and insights so they can focus on running their business and addressing their customers' needs.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Simplify business banking by equipping SMEs with the tools and insights they need to focus on growth and serving their customers.",
+      image: "/assets/digital-guy.jpg",
       link: "#",
     },
     {
-      title: "Journey Manager",
+      title: "Journey Manager.",
       description:
-        "Deliver faster, easier, and compliant onboarding customer journeys. Reduce manual effort, streamline complex processes, and create personalized journeys to drive higher conversion rates and cost-efficiency.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Faster, compliant onboarding made simple—reducing effort, streamlining processes, and boosting conversions.",
+      image: "/assets/digital-journey.jpg",
       link: "#",
     },
     {
       title: "Islamic Banking",
       description:
-        "A flexible and efficient award-winning solution, delivering Shari'ah-compliant experiences using a combination of digital and human interaction, leveraging advanced product-building capabilities and modern technology to create offerings that are compliant and personalized.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Reimagining Islamic banking with an award-winning solution seamlessly merging digital innovation and human connection to deliver personalized, Shari’ah-compliant offerings powered by modern technology.",
+      image: "/assets/islamic-bank.jpg",
       link: "#",
     },
   ]
@@ -36,8 +36,8 @@ export function DigitalBankingNeeds() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue mb-12">
-          Digital banking for all your needs
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#153365] mb-12">
+         All-in-One Digital Banking, Tailored to You
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           {needs.map((item, index) => (
@@ -49,9 +49,9 @@ export function DigitalBankingNeeds() {
                 height={200}
                 className="rounded-lg mb-4 object-cover h-[200px] w-full"
               />
-              <h3 className="text-xl font-semibold text-temenos-blue mb-2">{item.title}</h3>
+              <h3 className="text-xl font-semibold text-[#153365] mb-2">{item.title}</h3>
               <p className="text-temenos-gray mb-4">{item.description}</p>
-              <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">
+              <Button className="w-fit bg-[#153365] hover:bg-[#28B1D3] text-white">
                 Explore {item.title.replace("Digital for ", "").replace("Banking", "").trim()}
               </Button>
             </div>
