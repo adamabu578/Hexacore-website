@@ -16,11 +16,12 @@ import {
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { MenuIcon, SearchIcon, ArrowRight } from "lucide-react"
+import { Menu } from 'lucide-react';
 import Image from "next/image"
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full  bg-[#153365] shadow-sm ">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -218,16 +219,17 @@ export default function SiteHeader() {
         </div>
         <div className="flex items-center space-x-4">
           <Button variant="ghost" size="icon" className="hidden md:flex">
-            <SearchIcon className="h-5 w-5" />
-            <span className="sr-only">Search</span>
+            <SearchIcon className="h-5 w-5 text-[#28B1D3]" />
+            <span className="sr-only ">Search</span>
           </Button>
-          <Button className="hidden md:flex bg-[#153365] hover:bg-[#28B1D3] text-white">
+          <Button className="hidden md:flex bg-[#28B1D3] hover:bg-[#28B1D3] text-white">
             Contact Sales
           </Button>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="lg:hidden">
-                <MenuIcon className="h-6 w-6" />
+                {/* <MenuIcon className="h-10 w-30" /> */}
+                  <Menu className="h-10 w-30" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
