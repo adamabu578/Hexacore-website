@@ -9,29 +9,29 @@ export function AiHero() {
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-8 items-center">
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-temenos-blue">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-[#153365]">
               Hexacore AI
             </h1>
             <p className="max-w-[600px] text-temenos-gray md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Hexacore leads responsible banking with AI-driven growth and efficiency.
+             Hexacore drives responsible banking with AI-powered growth and operational efficiency.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">
-              Watch on-demand webinar
+            <Button className="w-fit bg-[#153365] hover:bg-[#28B1D3] text-white">
+              Explore Insights Available On-Demand
             </Button>
             <Link
               href="#"
-              className="inline-flex items-center justify-center text-temenos-blue hover:underline font-medium"
+              className="inline-flex items-center justify-center text-[#153365] hover:underline font-medium"
             >
-              Connect with us <ArrowRight className="ml-2 h-4 w-4" />
+              Connect with us <ArrowRight className="ml-2 h-4 w-4 text-[#153365]" />
             </Link>
           </div>
         </div>
         <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full">
           <Image
-            src="/placeholder.svg?height=600&width=800"
-            alt="Temenos AI"
+            src="/assets/hexa-ai1.jpeg"
+            alt="hexa AI"
             layout="fill"
             objectFit="cover"
             className="rounded-lg shadow-lg"
