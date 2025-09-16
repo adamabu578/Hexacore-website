@@ -19,17 +19,13 @@ export default function CorporateCommercialBankingPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-temenos-light-bg">
           <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue">
-                Delivering corporate and commercial banking across lending, trade and liquidity
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#153365]">
+               Comprehensive corporate and commercial banking across lending, trade, and liquidity.
               </h2>
             </div>
             <div className="space-y-4">
               <p className="text-temenos-gray md:text-lg">
-                Manage your entire portfolio on a single, integrated platform, including corporate and commercial
-                lending, supply chain finance, corporate deposits, corporate trade finance, and cash and liquidity
-                management. Designed for banks serving large and multinational enterprises, it simplifies operations,
-                automates processes, and supports faster decision making with real-time services tailored to corporate
-                and commercial banking.
+                One platform to streamline operations, automate processes, and enable real-time corporate and commercial banking.
               </p>
             </div>
           </div>
