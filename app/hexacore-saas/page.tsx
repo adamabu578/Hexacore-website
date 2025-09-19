@@ -15,7 +15,7 @@ import { FutureOfBankingCta } from "@/components/innovation/future-of-banking-ct
 export default function TemenosSaasPage() {
   const breadcrumbItems = [
     { label: "Innovation", href: "/innovation" },
-    { label: "SaaS", href: "/temenos-saas" },
+    { label: "SaaS", href: "/Hexacore" },
   ]
 
   return (

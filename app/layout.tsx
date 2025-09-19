@@ -6,9 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Hexacore | Digital, Core & AI banking platforms",
+  title: "Hexacore | Digital Core & AI banking platforms",
   description: " hexacore banking solutions.",
-    generator: 'v0.dev'
+    generator: 'Next.js',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

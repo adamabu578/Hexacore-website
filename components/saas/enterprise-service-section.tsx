@@ -6,28 +6,28 @@ import { PlayCircle } from "lucide-react"
 export function EnterpriseServiceSection() {
   const services = [
     {
-      title: "All banking, one service",
+      title: "Unified Banking, One Solution",
       description:
-        "Enterprise Service unlocks the core and digital banking technology you've been waiting for. Easy to consume and configure, functionally rich, and proven to meet new client demands with every iteration.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Access core and digital banking like never before with Enterprise Service simple, configurable, and continuously improving to meet client needs.",
+      image: "assets/saas2.jpg",
       type: "video",
       linkText: "Watch video",
       linkHref: "#",
     },
     {
-      title: "The shift to SaaS",
+      title: "The SaaS Revolution",
       description:
-        "Explore how SaaS helps banks to navigate disruption and stay competitive. Banks can fast track their transition to cloud while also improving agility to support business and regulatory shifts.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Learn how SaaS helps banks manage disruption, embrace the cloud, and boost agility to meet evolving requirements.",
+      image: "assets/saas3.jpg",
       type: "blog",
       linkText: "Read blog",
       linkHref: "#",
     },
     {
-      title: "Explore the Enterprise Service",
+      title: "Unlock Enterprise Service",
       description:
-        "Enterprise Service on Temenos SaaS supports banks with banking-grade resiliency, risk management, security and change control to meet governance and regulatory obligations in 30+ regulated regions.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Hexacore SaaS Enterprise Service provides banking-grade resiliency, security, and risk controls, ensuring compliance in 30+ regulated regions.",
+      image: "/assets/saas4.jpg",
       type: "factsheet",
       linkText: "View fact sheet",
       linkHref: "#",
@@ -37,8 +37,8 @@ export function EnterpriseServiceSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-temenos-blue mb-12">
-          Enterprise Service on Temenos SaaS
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#153365] mb-12">
+          Enterprise Service on Hexacore SaaS
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
@@ -53,15 +53,15 @@ export function EnterpriseServiceSection() {
                 />
                 {service.type === "video" && (
                   <button className="absolute inset-0 flex items-center justify-center z-10 text-white">
-                    <PlayCircle className="h-16 w-16 fill-temenos-blue stroke-white" />
+                    <PlayCircle className="h-16 w-16 fill-[#153365] stroke-white" />
                     <span className="sr-only">Play video</span>
                   </button>
                 )}
               </div>
-              <h3 className="text-xl font-semibold text-temenos-blue mb-2">{service.title}</h3>
+              <h3 className="text-xl font-semibold text-[-[#153365] mb-2">{service.title}</h3>
               <p className="text-temenos-gray mb-4">{service.description}</p>
               <Link href={service.linkHref}>
-                <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">
+                <Button className="w-fit bg-[#153365] hover:bg-[#28B1D3] text-white">
                   {service.linkText}
                 </Button>
               </Link>

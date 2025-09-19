@@ -5,7 +5,7 @@ import Link from "next/link"
 export function EvolvingTechSection() {
   const innovationAreas = [
     {
-      title: "Temenos Banking Platform",
+      title: "Hexacore Banking Platform",
       description:
         "All our clients benefit from over 30 years of continual innovation on the Temenos Banking Platform. Our single code base ensures our innovations drive evolving banking functionality and enables you to work with modern technology and tools at any time.",
       image: "/placeholder.svg?height=200&width=300",
@@ -13,26 +13,26 @@ export function EvolvingTechSection() {
       buttonText: "Explore Our Banking Platform",
     },
     {
-      title: "Temenos AI",
+      title: "Hexacore AI",
       description:
-        "Temenos empowers banks with AI-driven solutions to enhance engagement, boost efficiency, and accelerate innovation and growth. We offer capabilities within our existing products as well as AI solutions that deliver real-time insights, reduce risk, and support decision making.",
-      image: "/placeholder.svg?height=200&width=300",
+        "Hexacore empowers banks with AI-driven solutions to enhance engagement, boost efficiency, and accelerate innovation and growth. We offer capabilities within our existing products as well as AI solutions that deliver real-time insights, reduce risk, and support decision making.",
+      image: "/asset/s/ai-agent.jpg",
       link: "/innovation/ai",
       buttonText: "Explore AI",
     },
     {
-      title: "Temenos SaaS",
+      title: "Hexacore SaaS",
       description:
-        "Temenos SaaS grants access to market-leading core banking, exceptional digital banking, and proven AI capabilities. It lets you operate as swiftly as a neo-bank, entrusting technology management to a global leader, so you can focus on your customers.",
-      image: "/placeholder.svg?height=200&width=300",
-      link: "/temenos-saas", // Assuming a SaaS page might exist or be created
-      buttonText: "Explore Temenos SaaS",
+        "Hexacore SaaS grants access to market-leading core banking, exceptional digital banking, and proven AI capabilities. It lets you operate as swiftly as a neo-bank, entrusting technology management to a global leader, so you can focus on your customers.",
+      image: "/assets/saas.jpg",
+      link: "/Hexacore-saas", // Assuming a SaaS page might exist or be created
+      buttonText: "Explore Hexacore SaaS",
     },
     {
       title: "Cloud Banking",
       description:
         "As the first to bring core banking technology to the Microsoft cloud in 2011, Temenos initiated the industry's shift towards cloud solutions. Today, we keep perfecting cloud-native standards, enabling banks to adopt Temenos solutions in the Cloud or as SaaS.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/assets/cloud.jpg",
       link: "/innovation/cloud",
       buttonText: "Explore Cloud",
     },
@@ -57,7 +57,7 @@ export function EvolvingTechSection() {
               <h3 className="text-xl font-semibold text-temenos-blue mb-2">{area.title}</h3>
               <p className="text-temenos-gray mb-4">{area.description}</p>
               <Link href={area.link}>
-                <Button className="w-fit bg-temenos-blue hover:bg-temenos-blue-hover text-white">
+                <Button className="w-fit bg-[#153365] hover:bg-temenos-blue-hover text-white">
                   {area.buttonText}
                 </Button>
               </Link>

@@ -88,7 +88,7 @@ export default function SiteHeader() {
                       </NavigationMenuLink>
                     </li>
                     <li className="col-span-full flex justify-end">
-                      <Link href="/temenos-saas" passHref>
+                      <Link href="/hexacore-saas" passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "group flex items-center")}>
                           Explore SaaS{" "}
                           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
