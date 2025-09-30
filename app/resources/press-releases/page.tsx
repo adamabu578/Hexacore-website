@@ -1,334 +1,355 @@
-"use client";
+"use client"
 import React, { useState } from 'react';
-import { ArrowRight, Mail, Calendar, FileText, CheckCircle } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Search, ChevronRight, Filter, Calendar, ArrowRight, Users, Building, Globe, Phone, Mail, FileText, Video, Newspaper, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Checkbox } from '@/components/ui/checkbox';
+import { Badge } from '@/components/ui/badge';
 
-const NewsletterPage = () => {
-  const [email, setEmail] = useState('');
-  const [country, setCountry] = useState('');
-  const [isVerified, setIsVerified] = useState(false);
-
-  const handleSubmit = () => {
-    // Handle form submission
-    if (email && country && isVerified) {
-      console.log({ email, country, isVerified });
-      // Add your submission logic here
+const PressReleasesPage = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  const categories = ['Solutions', 'Topics', 'Categories', 'Regions', 'Year', 'Month'];
+  
+  const pressReleases = [
+    {
+      id: 1,
+      category: 'Press Release',
+      title: 'Ad hoc - Hexacore publishes its 2025 Interim Report',
+      excerpt: 'GRAND-LANCY, Switzerland, September 11, 2025 - Hexacore (SIX: TEMN) has today published its 2025 Interim Report.',
+      date: 'Read more',
+      image: '/assets/press.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 2,
+      category: 'Press Release',
+      title: 'Hexacore Named Overall Winner in IDC FinTech Real Results 2025',
+      excerpt: 'Hexacore also won winner for Bank Dispute Transformation with Cognizant listed as the 2025 IDC FinTech Rankings Top 25.',
+      date: 'Read more',
+      image: '/assets/press1.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 3,
+      category: 'Press Release',
+      title: 'Ad hoc - Hexacore Announces CEO Transition',
+      excerpt: 'GRAND-LANCY, Switzerland, September 6, 2025 - Temenos (SIX: TEMN), a global leader in banking technology, today announced a CEO transition.',
+      date: 'Read more',
+      image: '/assets/press2.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 4,
+      category: 'Press Release',
+      title: 'FundBank Goes Live with Temenos to Power Its Global Expansion Into the U.S.',
+      excerpt: 'FundBank has decided to partner with Temenos to expand in the U.S., boosting digital onboarding, product speed & scalability.',
+      date: 'Read more',
+      image: '/assets/press3.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 5,
+      category: 'Press Release',
+      title: 'Hexacore Earns 2025 Great Place To Work Certification™ Across 10 Countries',
+      excerpt: 'Hexacore achieves 2025 Great Place To Work certification in 10 countries, with 84% employee approval and strong workplace culture.',
+      date: 'Read more',
+      image: '/assets/press4.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 6,
+      category: 'Press Release',
+      title: 'Hexacore announces completion of its 2025 share buyback program',
+      excerpt: 'Hexacore, a global leader in banking technology, announces the successful completion of its 2025 share buyback program.',
+      date: 'Read more',
+      image: '/assets/press5.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 7,
+      category: 'Press Release',
+      title: 'Cognizant and Hexacore Expand Partnership to Power Core Banking Modernization',
+      excerpt: 'Hexacore and Cognizant expand partnership to launch Country Model Bank in Australia, accelerating core banking modernization.',
+      date: 'Read more',
+      image: '/assets/press6.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 8,
+      category: 'Press Release',
+      title: 'Egypt\'s MIDBANK completes core banking modernization with Hexacore',
+      excerpt: 'MIDBANK\'s transformation boosts service speed and efficiency, offering a modern digital banking experience across Egypt.',
+      date: 'Read more',
+      image: '/assets/press7.jpg',
+      tag: 'Press Release'
+    },
+    {
+      id: 9,
+      category: 'Press Release',
+      title: 'Hexacore Recognized by CNBC as One of the World\'s Top Fintech Companies',
+      excerpt: 'Hexacore joins elite list of enterprise fintech companies for the second year in a row.',
+      date: 'Read more',
+      image: '/assets/press.jpg',
+      tag: 'Press Release'
     }
+  ];
+
+  const footerSections = {
+    Portfolio: [
+      'Core Banking',
+      'Digital Front Office',
+      'Wealth Management',
+      'Payments',
+      'AI',
+      'Analytics',
+      'Hexacore SaaS'
+    ],
+    Solutions: [
+      'Cloud & Business',
+      'Corporate & Commercial',
+      'Wealth Management',
+      'Islamic Banking',
+      'Open Banking & Community',
+      'Inclusive & Community',
+      'Responsible Banking'
+    ],
+    Partners: [
+      'Become a Partner',
+      'Delivery',
+      'Sales',
+      'Technology',
+      'Solution Providers',
+      'Strategic Advisors',
+      'Developer Community',
+      'Microlearn Sign-up'
+    ],
+    Resources: [
+      'Blogs',
+      'Asset Library',
+      'Customer Case Stories',
+      'Press Releases',
+      'Newsletter Sign-up',
+      'Videos',
+      'Webinar Replays',
+      'Events',
+      'Verticals',
+      'View Portal',
+      'Ambassador Program'
+    ],
+    Company: [
+      'About & Company',
+      'Our Approach to ESG',
+      'Leadership',
+      'Investor Relations',
+      'Our Culture',
+      'Temenos Offices',
+      'Careers',
+      'Hexacore Fellows'
+    ]
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-4">
-              <div className="text-2xl font-bold text-indigo-600">Hexacore</div>
-              <span className="text-gray-400"></span>
-              <span className="text-gray-600">Newsletter</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-indigo-900 via-indigo-800 to-purple-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold mb-6 leading-tight">
-                Want insights from the world's largest banking community?
-              </h1>
-              <p className="text-xl text-indigo-100 mb-8">
-                Join 45,000 of your peers and sign-up now to get the regional Hexacore Newsletter with news and updates about our products, services and events.
-              </p>
-            </div>
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <img 
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f9ff'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='14' fill='%236b7280'%3EProfessionals looking at tablet%3C/text%3E%3C/svg%3E"
-                  alt="Professionals collaborating" 
-                  className="w-full h-64 object-cover rounded-lg"
-                />
+      <div className="bg-gradient-to-r from-indigo-900 to-indigo-800 text-white">
+        <div className="container mx-auto px-4 py-16">
+          <div className="flex items-center justify-between">
+            <div className="max-w-2xl">
+              <div className="flex items-center text-sm mb-4">
+                <span className="text-indigo-200">Home</span>
+                <ChevronRight className="h-4 w-4 mx-2 text-indigo-200" />
+                <span>Press Releases</span>
               </div>
+              <h1 className="text-5xl font-bold mb-4">Press Releases</h1>
+              <p className="text-xl text-indigo-100">Latest news from Hexacore</p>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src="/assets/press-news.jpg" 
+                alt="Office meeting" 
+                className="rounded-lg w-[500px] h-[300px] object-cover"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Newsletter Signup Form */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Subscribe today</h2>
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            Want Insights From the World's Largest Banking Community?
-          </h3>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Join 45,000 of your peers and sign-up now to get the regional Temenos Newsletter with news and updates about our products, services and events
-          </p>
+      {/* Filters and Search */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+          <div className="flex flex-wrap items-center gap-4 mb-6">
+            {categories.map((category) => (
+              <Button 
+                key={category} 
+                variant="outline" 
+                size="sm"
+                className="border-indigo-200 text-indigo-700 hover:bg-indigo-50"
+              >
+                {category}
+                <ChevronRight className="h-4 w-4 ml-1" />
+              </Button>
+            ))}
+            <Button variant="outline" size="sm" className="ml-auto">
+              <Filter className="h-4 w-4 mr-2" />
+              Reset Filters
+            </Button>
+          </div>
+          
+          <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-bold text-gray-900">Latest news from Temenos</h2>
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+              <Input 
+                placeholder="Search..." 
+                className="pl-10 w-80"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+          </div>
+          <p className="text-gray-600 mt-2">430 Results</p>
         </div>
 
-        <Card className="bg-white max-w-2xl mx-auto border border-gray-200 shadow-lg">
-          <CardContent className="p-8">
-            <div className="space-y-6">
-              <div>
-                <Label htmlFor="email" className="text-sm font-medium text-gray-700 mb-2 block">
-                  Company Email *
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-white border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+        {/* Press Releases Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {pressReleases.map((release) => (
+            <div key={release.id} className="bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="relative">
+                <img 
+                  src={release.image} 
+                  alt={release.title}
+                  className="w-full h-48 object-cover rounded-t-lg"
                 />
+                <Badge className="absolute top-4 left-4 bg-teal-500 hover:bg-teal-600">
+                  {release.tag}
+                </Badge>
               </div>
-
-              <div>
-                <Label htmlFor="country" className="text-sm font-medium text-gray-700 mb-2 block">
-                  Country *
-                </Label>
-                <Input
-                  id="country"
-                  type="text"
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
-                  className="w-full bg-white border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
-                />
-              </div>
-
-              {/* reCAPTCHA placeholder */}
-              <div className="flex items-center space-x-3 p-4 border border-gray-300 rounded bg-gray-50">
-                <Checkbox
-                  id="recaptcha"
-                  checked={isVerified}
-                  onCheckedChange={setIsVerified}
-                />
-                <label htmlFor="recaptcha" className="text-sm text-gray-700">
-                  I'm not a robot
-                </label>
-                <div className="ml-auto">
-                  <div className="text-xs text-gray-500">
-                    <div>reCAPTCHA</div>
-                    <div className="flex space-x-1 text-xs">
-                      <span>Privacy</span>
-                      <span>-</span>
-                      <span>Terms</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <Button 
-                onClick={handleSubmit}
-                className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-2 rounded"
-                disabled={!isVerified}
-              >
-                Subscribe
-              </Button>
-
-              <div className="text-xs text-gray-600 leading-relaxed">
-                By signing up, you agree to receive our newsletter which we send using a third party provider (Salesforce). Contact us anytime to opt out. We use industry standard technology to gather data we agreed with you and tools software to improve our newsletter. For more information on how we use your data please see our{' '}
-                <a href="#" className="text-indigo-600 hover:underline">privacy policy</a>.
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-3 line-clamp-2">{release.title}</h3>
+                <p className="text-gray-600 mb-4 line-clamp-3">{release.excerpt}</p>
+                <Button variant="link" className="p-0 text-teal-600 hover:text-teal-700">
+                  {release.date}
+                  <ArrowRight className="h-4 w-4 ml-1" />
+                </Button>
               </div>
             </div>
-          </CardContent>
-        </Card>
+          ))}
+        </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center items-center space-x-2 mb-12">
+          <Button variant="outline" size="sm" className="w-10 h-10 rounded-full bg-indigo-600 text-white border-indigo-600">1</Button>
+          <Button variant="outline" size="sm" className="w-10 h-10 rounded-full">2</Button>
+          <Button variant="outline" size="sm" className="w-10 h-10 rounded-full">3</Button>
+          <span className="text-gray-400">...</span>
+          <Button variant="outline" size="sm" className="w-10 h-10 rounded-full">48</Button>
+        </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gray-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="bg-white rounded-lg p-8 shadow-sm">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+      <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-4">
                 The future of banking starts here
               </h2>
-              <p className="text-gray-600 mb-6">
-                Discover how our platform helps financial institutions navigate change, embrace new opportunities, and deliver smarter, faster banking. Together, we embrace the future of finance – Leading Banking Forward.
+              <p className="text-xl text-purple-100 mb-6">
+                Discover how our platform helps financial institutions navigate change, embrace new opportunities, and deliver strategic, faster banking. Together, we embrace the future of finance – Leading Banking Forward.
               </p>
             </div>
-            
             <div className="space-y-4">
-              <Card className="bg-white hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-teal-100 p-3 rounded-full">
-                      <Mail className="h-6 w-6 text-teal-600" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900">Contact the team</h3>
-                      <p className="text-gray-600 text-sm">We're here to help.</p>
-                    </div>
-                    <ArrowRight className="h-5 w-5 text-teal-600" />
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-teal-100 p-3 rounded-full">
-                      <Calendar className="h-6 w-6 text-teal-600" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900">Attend an event</h3>
-                      <p className="text-gray-600 text-sm">Join us live and be part of the conversation.</p>
-                    </div>
-                    <ArrowRight className="h-5 w-5 text-teal-600" />
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-teal-100 p-3 rounded-full">
-                      <FileText className="h-6 w-6 text-teal-600" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900">Explore resources</h3>
-                      <p className="text-gray-600 text-sm">Expert insights, guides, and news.</p>
-                    </div>
-                    <ArrowRight className="h-5 w-5 text-teal-600" />
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-teal-100 p-3 rounded-full">
-                      <Mail className="h-6 w-6 text-teal-600" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900">Newsletter sign-up</h3>
-                      <p className="text-gray-600 text-sm">Subscribe for Temenos news, updates, events.</p>
-                    </div>
-                    <ArrowRight className="h-5 w-5 text-teal-600" />
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex items-center justify-between">
+                <div>
+                  <h3 className="font-semibold">Contact the team</h3>
+                  <p className="text-sm text-purple-100">We're here to help</p>
+                </div>
+                <Button size="sm" className="bg-teal-500 hover:bg-teal-600">
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex items-center justify-between">
+                <div>
+                  <h3 className="font-semibold">Attend an event</h3>
+                  <p className="text-sm text-purple-100">Join us live and be part of the conversation</p>
+                </div>
+                <Button size="sm" className="bg-teal-500 hover:bg-teal-600">
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex items-center justify-between">
+                <div>
+                  <h3 className="font-semibold">Explore resources</h3>
+                  <p className="text-sm text-purple-100">Expert insights, guides, and more</p>
+                </div>
+                <Button size="sm" className="bg-teal-500 hover:bg-teal-600">
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 flex items-center justify-between">
+                <div>
+                  <h3 className="font-semibold">Newsletter sign-up</h3>
+                  <p className="text-sm text-purple-100">Subscribe for Temenos news, updates, events</p>
+                </div>
+                <Button size="sm" className="bg-teal-500 hover:bg-teal-600">
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-indigo-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-indigo-900 text-white">
+        <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
             {/* Logo and Social */}
             <div className="lg:col-span-1">
-              <h3 className="text-lg font-semibold mb-4">Hexacore</h3>
-              <div className="flex space-x-3">
-                <div className="w-8 h-8 bg-indigo-700 rounded flex items-center justify-center cursor-pointer hover:bg-indigo-600">
-                  <span className="text-xs font-bold">f</span>
-                </div>
-                <div className="w-8 h-8 bg-indigo-700 rounded flex items-center justify-center cursor-pointer hover:bg-indigo-600">
-                  <span className="text-xs font-bold">in</span>
-                </div>
-                <div className="w-8 h-8 bg-indigo-700 rounded flex items-center justify-center cursor-pointer hover:bg-indigo-600">
-                  <span className="text-xs font-bold">@</span>
-                </div>
-                <div className="w-8 h-8 bg-indigo-700 rounded flex items-center justify-center cursor-pointer hover:bg-indigo-600">
-                  <span className="text-xs font-bold">X</span>
-                </div>
+              <div className="text-2xl font-bold mb-4">temenos</div>
+              <div className="flex space-x-4">
+                <Button size="sm" variant="ghost" className="p-2">
+                  <Users className="h-4 w-4" />
+                </Button>
+                <Button size="sm" variant="ghost" className="p-2">
+                  <Building className="h-4 w-4" />
+                </Button>
+                <Button size="sm" variant="ghost" className="p-2">
+                  <Globe className="h-4 w-4" />
+                </Button>
+                <Button size="sm" variant="ghost" className="p-2">
+                  <Mail className="h-4 w-4" />
+                </Button>
               </div>
             </div>
-            
-            {/* Portfolio */}
-            <div>
-              <h4 className="font-semibold mb-4">Portfolio</h4>
-              <ul className="space-y-2 text-sm text-indigo-200">
-                <li><a href="#" className="hover:text-white">Core Banking</a></li>
-                <li><a href="#" className="hover:text-white">Digital Banking</a></li>
-                <li><a href="#" className="hover:text-white">Wealth Management</a></li>
-                <li><a href="#" className="hover:text-white">Platform</a></li>
-                <li><a href="#" className="hover:text-white">AI</a></li>
-                <li><a href="#" className="hover:text-white">Cloud</a></li>
-                <li><a href="#" className="hover:text-white">Temenos SaaS</a></li>
-              </ul>
-            </div>
 
-            {/* Solutions */}
-            <div>
-              <h4 className="font-semibold mb-4">Solutions</h4>
-              <ul className="space-y-2 text-sm text-indigo-200">
-                <li><a href="#" className="hover:text-white">Retail & Business</a></li>
-                <li><a href="#" className="hover:text-white">Corporate & Commercial</a></li>
-                <li><a href="#" className="hover:text-white">Wealth Management</a></li>
-                <li><a href="#" className="hover:text-white">Banking Experiences</a></li>
-                <li><a href="#" className="hover:text-white">Credit Unions & Community</a></li>
-                <li><a href="#" className="hover:text-white">Islamic Banking</a></li>
-                <li><a href="#" className="hover:text-white">Inclusive & Community</a></li>
-                <li><a href="#" className="hover:text-white">Regionalized Solutions</a></li>
-              </ul>
-            </div>
-
-            {/* Partners */}
-            <div>
-              <h4 className="font-semibold mb-4">Partners</h4>
-              <ul className="space-y-2 text-sm text-indigo-200">
-                <li><a href="#" className="hover:text-white">Become a Partner</a></li>
-                <li><a href="#" className="hover:text-white">Delivery</a></li>
-                <li><a href="#" className="hover:text-white">Sales</a></li>
-                <li><a href="#" className="hover:text-white">Technology</a></li>
-                <li><a href="#" className="hover:text-white">Solution Providers</a></li>
-                <li><a href="#" className="hover:text-white">Strategic Advisors</a></li>
-                <li><a href="#" className="hover:text-white">Developer Community</a></li>
-                <li><a href="#" className="hover:text-white">Newsletter Sign-up</a></li>
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm text-indigo-200">
-                <li><a href="#" className="hover:text-white">Blogs</a></li>
-                <li><a href="#" className="hover:text-white">Asset Library</a></li>
-                <li><a href="#" className="hover:text-white">Customer Success Stories</a></li>
-                <li><a href="#" className="hover:text-white">Press Releases</a></li>
-                <li><a href="#" className="hover:text-white">Newsletter Sign-up</a></li>
-                <li><a href="#" className="hover:text-white">Videos</a></li>
-                <li><a href="#" className="hover:text-white">Webinar Replays</a></li>
-                <li><a href="#" className="hover:text-white">Events</a></li>
-                <li><a href="#" className="hover:text-white">Webinars</a></li>
-                <li><a href="#" className="hover:text-white">Value Benchmark</a></li>
-                <li><a href="#" className="hover:text-white">Ambassador Program</a></li>
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-indigo-200">
-                <li><a href="#" className="hover:text-white">Vision & Strategy</a></li>
-                <li><a href="#" className="hover:text-white">Our Approach to ESG</a></li>
-                <li><a href="#" className="hover:text-white">Leadership</a></li>
-                <li><a href="#" className="hover:text-white">Investor Relations</a></li>
-                <li><a href="#" className="hover:text-white">Our Culture</a></li>
-                <li><a href="#" className="hover:text-white">Hexacore Offices</a></li>
-                <li><a href="#" className="hover:text-white">Careers</a></li>
-                <li><a href="#" className="hover:text-white">Hexacore Fellows</a></li>
-              </ul>
-            </div>
+            {/* Footer Links */}
+            {Object.entries(footerSections).map(([title, links]) => (
+              <div key={title}>
+                <h4 className="font-semibold mb-4">{title}</h4>
+                <ul className="space-y-2">
+                  {links.slice(0, 7).map((link) => (
+                    <li key={link}>
+                      <a href="#" className="text-indigo-200 hover:text-white text-sm">
+                        {link}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
 
-          {/* Footer Bottom */}
-          <div className="border-t border-indigo-800 mt-12 pt-8 text-sm text-indigo-300">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p>© 2025 Hexacore Lagos Nigeria</p>
-              <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-white">Cookie Policy</a>
-                <a href="#" className="hover:text-white">Privacy Policy</a>
-                <a href="#" className="hover:text-white">Supplier Information</a>
-                <a href="#" className="hover:text-white">Terms & Conditions</a>
-              </div>
+          {/* Bottom Footer */}
+          <div className="border-t border-indigo-800 mt-12 pt-8 flex flex-wrap items-center justify-between text-sm text-indigo-200">
+            <div className="flex flex-wrap items-center space-x-6">
+              <span>© 2025 Temenos Headquarters SA</span>
+              <a href="#" className="hover:text-white">Cookie Policy</a>
+              <a href="#" className="hover:text-white">Privacy Policy</a>
+              <a href="#" className="hover:text-white">Supplier Information</a>
+              <a href="#" className="hover:text-white">Terms & Conditions</a>
             </div>
           </div>
         </div>
@@ -337,4 +358,4 @@ const NewsletterPage = () => {
   );
 };
 
-export default NewsletterPage;
+export default PressReleasesPage;
