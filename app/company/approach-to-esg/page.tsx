@@ -26,17 +26,17 @@ const HexacoreESG = () => {
     {
       title: "We are committed to sustainable business practices",
       description: "Business sustainability is the foundation of responsible living. We operations thinking 360 degrees, thinking long term and working together as a community.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/commitment.jpg"
     },
     {
       title: "We are committed to working together to achieve our goals",
       description: "Developing the future talent pipeline and nurturing the next generation of leaders.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/commitment1.jpg"
     },
     {
       title: "We are committed to working for the benefit of the communities around us",
       description: "Supporting our local communities through volunteering and community projects.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/commitment2.jpg"
     }
   ];
 
@@ -65,33 +65,33 @@ const HexacoreESG = () => {
     {
       title: "Operating Responsibly",
       description: "Ethics Business Conduct and Governance | Compliance Security, Risk Privacy and Cybersecurity | Sustainable Product Development | Responsible Procurement",
-      image: "/api/placeholder/300/200"
+      image: "/assets/cyber-security.jpg"
     },
     {
       title: "Caring for the planet",
       description: "Environmental Policy | Environmental Management System | Exploring Space to Reducing our Environmental Footprint | Climate Action | Sustainable Development and Reporting | Environmental Monitoring",
-      image: "/api/placeholder/300/200"
+      image: "/assets/planet.jpg"
     },
     {
       title: "Investing in Our People",
       description: "Diversity, Inclusion and Equal Opportunity | Human Rights at all Temenos Businesses | Wellbeing and Workplace Culture | Learning and Development | Talent and Performance | Equal Performance",
-      image: "/api/placeholder/300/200"
+      image: "/assets/investment.jpg"
     },
-    {
-      title: "Achieving Business Excellence",
-      description: "Business Performance and Business Impact | Innovation and Technology | Data Ethics | Product Responsibility",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      title: "Enabling Access to Financial Services",
-      description: "Financial Inclusion Platforms",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      title: "Investing in Our Communities",
-      description: "Community Investment | Employee Volunteering",
-      image: "/api/placeholder/300/200"
-    }
+    // {
+    //   title: "Achieving Business Excellence",
+    //   description: "Business Performance and Business Impact | Innovation and Technology | Data Ethics | Product Responsibility",
+    //   image: "/api/placeholder/300/200"
+    // },
+    // {
+    //   title: "Enabling Access to Financial Services",
+    //   description: "Financial Inclusion Platforms",
+    //   image: "/api/placeholder/300/200"
+    // },
+    // {
+    //   title: "Investing in Our Communities",
+    //   description: "Community Investment | Employee Volunteering",
+    //   image: "/api/placeholder/300/200"
+    // }
   ];
 
   const footerSections = {
@@ -101,7 +101,7 @@ const HexacoreESG = () => {
       "Wealth Management",
       "Payments",
       "Fund",
-      "Temenos SaaS"
+      "Hexacore SaaS"
     ],
     Solutions: [
       "Digital Transformation",
@@ -141,9 +141,9 @@ const HexacoreESG = () => {
       "Leadership",
       "Investor Relations",
       "Our Culture",
-      "Temenos Offices",
+      "Hexacore Offices",
       "Careers",
-      "Temenos Fellows"
+      "Hexacore Fellows"
     ]
   };
 
@@ -171,7 +171,7 @@ const HexacoreESG = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="/api/placeholder/600/400" 
+                  src="/assets/commitment-hero.jpg" 
                   alt="ESG collaboration" 
                   className="rounded-2xl shadow-2xl"
                 />
@@ -188,7 +188,7 @@ const HexacoreESG = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="lg:w-1/2">
               <h2 className="text-4xl font-bold text-blue-900 mb-6">
-                Temenos has seen that technology has the power to change our world.
+                Hexacore has seen that technology has the power to change our world.
               </h2>
             </div>
             <div className="lg:w-1/2">
@@ -396,7 +396,7 @@ const HexacoreESG = () => {
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Newsletter sign-up</h3>
-                      <p className="text-blue-100 text-sm">Subscribe for Temenos news, updates, events.</p>
+                      <p className="text-blue-100 text-sm">Subscribe for Hexacore news, updates, events.</p>
                     </div>
                     <Mail className="h-8 w-8 text-white" />
                   </CardContent>
@@ -412,7 +412,7 @@ const HexacoreESG = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
             <div className="lg:col-span-1">
-              <h3 className="text-2xl font-bold mb-8">temenos</h3>
+              <h3 className="text-2xl font-bold mb-8">Hexacore</h3>
               <div className="flex space-x-4">
                 <Facebook className="h-6 w-6 text-blue-300 hover:text-white cursor-pointer transition-colors" />
                 <Linkedin className="h-6 w-6 text-blue-300 hover:text-white cursor-pointer transition-colors" />
@@ -439,7 +439,7 @@ const HexacoreESG = () => {
           
           <div className="border-t border-blue-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-sm text-blue-200">
-              <p>© 2025 Temenos Headquarters SA</p>
+              <p>© 2025 Hexacore Lagos Nigeria</p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
                 <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

@@ -7,8 +7,8 @@ const HexacoreInvestorRelations = () => {
   const recentNews = [
     {
       date: "Dec 12, 2024",
-      title: "Temenos Declares Plan for 2025 share purchase programme",
-      description: "The Board of Directors of Temenos AG has approved a new share purchase programme for 2025.",
+      title: "Hexacore Declares Plan for 2025 share purchase programme",
+      description: "The Board of Directors of Hexacore AG has approved a new share purchase programme for 2025.",
       category: "Financial News"
     },
     {
@@ -46,20 +46,20 @@ const HexacoreInvestorRelations = () => {
   const pressReleases = [
     {
       date: "Dec 10, 2024",
-      title: "Temenos Declares Dividend for 2024 Financial Year",
+      title: "Hexacore Declares Dividend for 2024 Financial Year",
       description: "Board recommends dividend payment of CHF 2.85 per share.",
       category: "Financial"
     },
     {
       date: "Nov 28, 2024", 
-      title: "Temenos Announces CEO Transition Plan",
+      title: "Hexacore Announces CEO Transition Plan",
       description: "Strategic leadership transition to drive next phase of growth.",
       category: "Corporate"
     },
     {
       date: "Oct 15, 2024",
       title: "Innovation Awards Recognition",
-      description: "Temenos wins multiple industry awards for banking technology innovation.",
+      description: "Hexacore wins multiple industry awards for banking technology innovation.",
       category: "Awards"
     }
   ];
@@ -76,17 +76,17 @@ const HexacoreInvestorRelations = () => {
     {
       title: "Board of Directors",
       description: "Meet our experienced board members and their backgrounds.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/board.jpg"
     },
     {
       title: "Annual reports and governance information",
       description: "Access comprehensive annual reports and corporate governance documents.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/annual-report.jpg"
     },
     {
       title: "Corporate governance",
       description: "Learn about our governance framework, policies and compliance measures.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/investor1.jpg"
     }
   ];
 
@@ -94,43 +94,43 @@ const HexacoreInvestorRelations = () => {
     {
       title: "Share information",
       description: "Real-time share price, trading volume and market data.",
-      image: "/api/placeholder/200/150"
+      image: "/assets/annual-report.jpg"
     },
     {
       title: "Analyst Coverage and Reports",
       description: "Independent research and analyst coverage of Temenos.",
-      image: "/api/placeholder/200/150"
+      image: "/assets/annual-report1.jpg"
     },
     {
       title: "Dividend information",
       description: "Historical dividend payments and policy information.",
-      image: "/api/placeholder/200/150"
+      image: "/assets/annual-report2.jpg"
     },
-    {
-      title: "Articles of association and registration",
-      description: "Official company documents and registration details.",
-      image: "/api/placeholder/200/150"
-    },
-    {
-      title: "AGM Information",
-      description: "Annual general meeting materials and voting information.",
-      image: "/api/placeholder/200/150"
-    },
-    {
-      title: "Key contacts",
-      description: "Direct contact information for investor relations team.",
-      image: "/api/placeholder/200/150"
-    }
+    // {
+    //   title: "Articles of association and registration",
+    //   description: "Official company documents and registration details.",
+    //   image: "/api/placeholder/200/150"
+    // },
+    // {
+    //   title: "AGM Information",
+    //   description: "Annual general meeting materials and voting information.",
+    //   image: "/api/placeholder/200/150"
+    // },
+    // {
+    //   title: "Key contacts",
+    //   description: "Direct contact information for investor relations team.",
+    //   image: "/api/placeholder/200/150"
+    // }
   ];
 
   const footerSections = {
     Portfolio: [
-      "Temenos Platform",
+      "Hexacore Platform",
       "Digital Banking", 
       "Wealth Management",
       "Payments",
       "Fund",
-      "Temenos SaaS"
+      "Hexacore SaaS"
     ],
     Solutions: [
       "Digital Transformation",
@@ -170,9 +170,9 @@ const HexacoreInvestorRelations = () => {
       "Leadership",
       "Investor Relations", 
       "Our Culture",
-      "Temenos Offices",
+      "Hexacore Offices",
       "Careers",
-      "Temenos Fellows"
+      "Hexcore Fellows"
     ]
   };
 
@@ -197,7 +197,7 @@ const HexacoreInvestorRelations = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="/api/placeholder/600/400" 
+                  src="/assets/investor-relation.jpg" 
                   alt="Business meeting" 
                   className="rounded-2xl shadow-2xl"
                 />
@@ -300,7 +300,7 @@ const HexacoreInvestorRelations = () => {
       {/* Share Price Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-blue-900 mb-8">Temenos share price</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-8">Hexacore share price</h2>
           <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-8">
             <div className="text-gray-500">
               <TrendingUp className="h-16 w-16 mx-auto mb-4" />
@@ -340,7 +340,7 @@ const HexacoreInvestorRelations = () => {
               <CardContent className="p-0 bg-white rounded-lg">
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img 
-                    src="/api/placeholder/400/250" 
+                    src="/assets/annual-report.jpg" 
                     alt="Annual report" 
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -359,7 +359,7 @@ const HexacoreInvestorRelations = () => {
               <CardContent className="p-0 bg-white rounded-lg">
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img 
-                    src="/api/placeholder/400/250" 
+                    src="/assets/annual-report3.jpg" 
                     alt="Interim results" 
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -547,7 +547,7 @@ const HexacoreInvestorRelations = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
             <div className="lg:col-span-1">
-              <h3 className="text-2xl font-bold mb-8">temenos</h3>
+              <h3 className="text-2xl font-bold mb-8">Hexacore</h3>
               <div className="flex space-x-4">
                 <Facebook className="h-6 w-6 text-blue-300 hover:text-white cursor-pointer transition-colors" />
                 <Linkedin className="h-6 w-6 text-blue-300 hover:text-white cursor-pointer transition-colors" />
@@ -574,7 +574,7 @@ const HexacoreInvestorRelations = () => {
           
           <div className="border-t border-blue-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-sm text-blue-200">
-              <p>© 2025 Temenos Headquarters SA</p>
+              <p>© 2025 Hexacore Lagos Nigeria</p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
                 <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

@@ -29,30 +29,30 @@ const HexacoreCulture = () => {
 
   const cultureItems = [
     {
-      title: "Wellbeing at Temenos",
-      description: "At Temenos, we are committed to supporting the wellbeing of our people and creating a healthy and safe work environment. Caring for others is fundamental to our values and we believe in a workplace where everyone feels that the Temenos experience is a positive one.",
-      image: "/api/placeholder/300/200"
+      title: "Wellbeing at Hexacore",
+      description: "At Hexacore, we are committed to supporting the wellbeing of our people and creating a healthy and safe work environment. Caring for others is fundamental to our values and we believe in a workplace where everyone feels that the Temenos experience is a positive one.",
+      image: "/assets/wellbeing.jpg"
     },
     {
-      title: "Temenos Volunteers: Giving back to the community",
+      title: "Hexacore Volunteers: Giving back to the community",
       description: "We have an active group of volunteers who contribute to projects all over the world. Some of our recent projects include supporting local communities, providing educational support and resources as well as creating general volunteer opportunities throughout our organization to drive our positive impact and progress in our regions or community, tech industry.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/volunteer.jpg"
     },
     {
       title: "Meet our Alumni",
       description: "Meet some of our former colleagues and hear the unique ways in their field. Their incredible achievements since they joined Temenos and discover their perspectives on the value that Temenos brings to their career and to their field, including the networks of talent in the FinTech and the world.",
-      image: "/api/placeholder/300/200"
+      image: "/assets/alumis.jpg"
     }
   ];
 
   const footerSections = {
     Portfolio: [
-      "Temenos Platform",
+      "Hexacore Platform",
       "Digital Banking",
       "Wealth Management",
       "Payments",
       "Fund",
-      "Temenos SaaS"
+      "Hexacore SaaS"
     ],
     Solutions: [
       "Digital Transformation",
@@ -92,9 +92,9 @@ const HexacoreCulture = () => {
       "Leadership",
       "Investor Relations",
       "Our Culture",
-      "Temenos Offices",
+      "Hexacore Offices",
       "Careers",
-      "Temenos Fellows"
+      "Hexacore Fellows"
     ]
   };
 
@@ -130,7 +130,7 @@ const HexacoreCulture = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="/api/placeholder/600/400" 
+                  src="/assets/culture.jpg" 
                   alt="Team collaboration" 
                   className="rounded-2xl shadow-2xl"
                 />
@@ -146,7 +146,7 @@ const HexacoreCulture = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold text-blue-900 mb-6">Temenos: Our Values</h2>
+              <h2 className="text-3xl font-bold text-blue-900 mb-6">Hexacore: Our Values</h2>
             </div>
             <div className="lg:w-1/2">
               <p className="text-gray-700 text-lg">
@@ -166,7 +166,7 @@ const HexacoreCulture = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-blue-900 mb-6">
               Our values are the unique ingredients that<br />
-              make up Temenos. We call them the 4 Cs:
+              make up Hexacore. We call them the 4 Cs:
             </h2>
           </div>
           
@@ -201,7 +201,7 @@ const HexacoreCulture = () => {
             <div className="lg:w-1/2">
               <h2 className="text-4xl font-bold text-blue-900 mb-6">Diversity, equity & inclusion</h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-                At Temenos, we are committed to building upon fairness so 
+                At Hexacore, we are committed to building upon fairness so 
                 everyone can be themselves and thrive. This starts with our own 
                 teams. We know that in the right context, all our people can 
                 contribute to the highest levels, have their voices heard, show their 
@@ -220,7 +220,7 @@ const HexacoreCulture = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="/api/placeholder/500/400" 
+                  src="/assets/culture-hands.jpg" 
                   alt="Diverse team collaboration" 
                   className="rounded-2xl shadow-xl"
                 />
@@ -271,7 +271,7 @@ const HexacoreCulture = () => {
             <div className="lg:w-1/2">
               <h2 className="text-4xl font-bold text-blue-900 mb-6">Become part of a winning team</h2>
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-                Temenos is an exciting place to work and our biggest asset is our 
+                Hexacore is an exciting place to work and our biggest asset is our 
                 people. By choosing a culture of innovation and collaboration, and 
                 by working together, we embrace the future of finance and help banks 
                 open the best report and ensure we continue to deliver unrivalled 
@@ -284,7 +284,7 @@ const HexacoreCulture = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="/api/placeholder/500/400" 
+                  src="/assets/lady-smiling.jpg" 
                   alt="Professional woman" 
                   className="rounded-2xl shadow-xl"
                 />
@@ -344,7 +344,7 @@ const HexacoreCulture = () => {
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Newsletter sign-up</h3>
-                      <p className="text-blue-100 text-sm">Subscribe for Temenos news, updates, events.</p>
+                      <p className="text-blue-100 text-sm">Subscribe for Hexacore news, updates, events.</p>
                     </div>
                     <Mail className="h-8 w-8 text-white" />
                   </CardContent>
@@ -360,7 +360,7 @@ const HexacoreCulture = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
             <div className="lg:col-span-1">
-              <h3 className="text-2xl font-bold mb-8">temenos</h3>
+              <h3 className="text-2xl font-bold mb-8">Hexacore</h3>
               <div className="flex space-x-4">
                 <Facebook className="h-6 w-6 text-blue-300 hover:text-white cursor-pointer transition-colors" />
                 <Linkedin className="h-6 w-6 text-blue-300 hover:text-white cursor-pointer transition-colors" />
@@ -387,7 +387,7 @@ const HexacoreCulture = () => {
           
           <div className="border-t border-blue-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-sm text-blue-200">
-              <p>© 2025 Temenos Headquarters SA</p>
+              <p>© 2025 Hexacore Lagos Nigeria</p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
                 <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
