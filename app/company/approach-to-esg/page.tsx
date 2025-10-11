@@ -157,14 +157,14 @@ const HexacoreESG = () => {
               <div className="text-sm text-gray-600 mb-4">
                 Our Approach to ESG
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-blue-900 mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold text-[#153365] mb-6 leading-tight">
                 Our Approach to<br />ESG
               </h1>
               <p className="text-xl text-gray-700 mb-8 max-w-lg">
                 Our goal is for one business is a one that takes care of the world 
                 and the people in it business every asset.
               </p>
-              <Button className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-full">
+              <Button className="bg-blue-[#153365] hover:bg-[#28B1D3] text-white px-8 py-3 rounded-full">
                 Learn more
               </Button>
             </div>
@@ -187,7 +187,7 @@ const HexacoreESG = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold text-blue-900 mb-6">
+              <h2 className="text-4xl font-bold text-[#153365] mb-6">
                 Hexacore has seen that technology has the power to change our world.
               </h2>
             </div>
@@ -206,7 +206,7 @@ const HexacoreESG = () => {
       {/* ESG Mission Section */}
       <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-16">Our ESG mission</h2>
+          <h2 className="text-4xl font-bold text-center text-[#153365] mb-16">Our ESG mission</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {esgMissions.map((mission, index) => (
@@ -217,7 +217,7 @@ const HexacoreESG = () => {
                       <mission.icon className="h-8 w-8 text-blue-600" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-blue-900 mb-4 leading-tight">
+                  <h3 className="text-xl font-bold text-[#153365] mb-4 leading-tight">
                     {mission.title}
                   </h3>
                 </CardContent>
@@ -230,7 +230,7 @@ const HexacoreESG = () => {
       {/* Our Commitment Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-16">Our commitment</h2>
+          <h2 className="text-4xl font-bold text-center text-[#153365] mb-16">Our commitment</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {commitments.map((commitment, index) => (
@@ -245,11 +245,11 @@ const HexacoreESG = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-blue-900 mb-4 leading-tight">{commitment.title}</h3>
+                    <h3 className="text-xl font-bold text-[#153365] mb-4 leading-tight">{commitment.title}</h3>
                     <p className="text-gray-600 text-sm mb-6 leading-relaxed">{commitment.description}</p>
                     <Button 
                       variant="ghost" 
-                      className="text-blue-600 hover:text-blue-800 p-0 h-auto font-medium group/btn"
+                      className="text-[#153365] hover:text-blue-800 p-0 h-auto font-medium group/btn"
                     >
                       Learn more 
                       <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -348,7 +348,7 @@ const HexacoreESG = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-900 to-purple-900">
+      <section className="py-20 bg-[#28B1D3]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 text-white mb-12 lg:mb-0">
@@ -362,7 +362,7 @@ const HexacoreESG = () => {
             </div>
             <div className="lg:w-1/2 lg:pl-12">
               <div className="space-y-6">
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Contact the team</h3>
@@ -372,7 +372,7 @@ const HexacoreESG = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Attend an event</h3>
@@ -382,7 +382,7 @@ const HexacoreESG = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Explore resources</h3>
@@ -392,7 +392,7 @@ const HexacoreESG = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Newsletter sign-up</h3>

@@ -101,29 +101,29 @@ const HexacoreCulture = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
+      <section className="bg-[#153365] py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 mb-12 lg:mb-0">
-              <div className="text-sm text-gray-600 mb-4 flex items-center">
+              <div className="text-sm text-white mb-4 flex items-center">
                 <span>Our Unique</span>
                 <ArrowRight className="mx-2 h-4 w-4" />
                 <span>Culture & Diversity</span>
                 <ArrowRight className="mx-2 h-4 w-4" />
                 <span>Our Culture</span>
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-blue-900 mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Our Unique<br />Culture
               </h1>
-              <p className="text-xl text-gray-700 mb-8 max-w-lg">
+              <p className="text-xl text-white mb-8 max-w-lg">
                 Because culture powers the company. Our unique spirit of who we are and 
                 how we think about things distinguishes us from others in technology and banking.
               </p>
-              <p className="text-lg text-gray-600 mb-8 max-w-lg">
+              <p className="text-lg text-white mb-8 max-w-lg">
                 Together with our values and clear purpose, understanding what banking can 
                 become and what role we can play, brings meaning to our work.
               </p>
-              <Button className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-full">
+              <Button className="bg-[#28B1D3] hover:bg-[#28B1D3] text-white px-8 py-3 rounded-full">
                 Connect with us
               </Button>
             </div>
@@ -146,7 +146,7 @@ const HexacoreCulture = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold text-blue-900 mb-6">Hexacore: Our Values</h2>
+              <h2 className="text-3xl font-bold text-[#153365] mb-6">Hexacore: Our Values</h2>
             </div>
             <div className="lg:w-1/2">
               <p className="text-gray-700 text-lg">
@@ -164,7 +164,7 @@ const HexacoreCulture = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-blue-900 mb-6">
+            <h2 className="text-4xl font-bold text-[#153365] mb-6">
               Our values are the unique ingredients that<br />
               make up Hexacore. We call them the 4 Cs:
             </h2>
@@ -184,7 +184,7 @@ const HexacoreCulture = () => {
           {/* Featured Value */}
           <Card className="bg-white border-0 shadow-lg max-w-4xl mx-auto">
             <CardContent className="p-12 text-center">
-              <h3 className="text-2xl font-bold text-blue-900 mb-6">We challenge</h3>
+              <h3 className="text-2xl font-bold text-[#153365] mb-6">We challenge</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 We believe great ideas come from asking difficult and brave change. The power to create great ideas lies in an open-minded environment, where great 
                 ideas and innovation can come from everyone and everywhere.
@@ -199,7 +199,7 @@ const HexacoreCulture = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold text-blue-900 mb-6">Diversity, equity & inclusion</h2>
+              <h2 className="text-4xl font-bold text-[#153365] mb-6">Diversity, equity & inclusion</h2>
               <p className="text-gray-700 text-lg mb-6 leading-relaxed">
                 At Hexacore, we are committed to building upon fairness so 
                 everyone can be themselves and thrive. This starts with our own 
@@ -269,7 +269,7 @@ const HexacoreCulture = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold text-blue-900 mb-6">Become part of a winning team</h2>
+              <h2 className="text-4xl font-bold text-[#153365] mb-6">Become part of a winning team</h2>
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
                 Hexacore is an exciting place to work and our biggest asset is our 
                 people. By choosing a culture of innovation and collaboration, and 
@@ -277,7 +277,7 @@ const HexacoreCulture = () => {
                 open the best report and ensure we continue to deliver unrivalled 
                 customer success.
               </p>
-              <Button className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-full">
+              <Button className="bg-[#153365] hover:bg-blue-800 text-white px-8 py-3 rounded-full">
                 Explore career opportunities
               </Button>
             </div>
@@ -296,7 +296,7 @@ const HexacoreCulture = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-900 to-purple-900">
+      <section className="py-20 bg-[#28B1D3]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 text-white mb-12 lg:mb-0">
@@ -310,7 +310,7 @@ const HexacoreCulture = () => {
             </div>
             <div className="lg:w-1/2 lg:pl-12">
               <div className="space-y-6">
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Contact the team</h3>
@@ -320,7 +320,7 @@ const HexacoreCulture = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Attend an event</h3>
@@ -330,7 +330,7 @@ const HexacoreCulture = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Explore resources</h3>
@@ -340,7 +340,7 @@ const HexacoreCulture = () => {
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
+                <Card className="bg-[#153365] border-white/20 hover:bg-white/20 transition-colors cursor-pointer">
                   <CardContent className="p-6 flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold mb-2">Newsletter sign-up</h3>
@@ -356,7 +356,7 @@ const HexacoreCulture = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-950 text-white py-16">
+      <footer className="bg-[#153365] text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
             <div className="lg:col-span-1">
